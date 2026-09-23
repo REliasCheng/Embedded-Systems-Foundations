@@ -2,13 +2,15 @@
 
 电子电路、数字逻辑、简化 CPU 与基础硬件控制实验。仓库包含 CircuitJS 电路、Digital 工程、STC8 控制程序、原理图和 BOM，内容从基础器件一直延伸到 CPU 的取指、解码与执行。
 
-| CPU 取指与数据通路 | NE555 充电状态 |
-| --- | --- |
-| ![CPU取指分析](assets/images/cpu-fetch-path.png) | ![NE555充电状态](assets/images/ne555-charge-state.png) |
-| **STC8 控制板原理图** | **UART 音频模块接口** |
-| ![STC8控制板原理图](assets/images/stc8-control-board-schematic.svg) | ![UART与语音模块接口](assets/images/uart-audio-interface.png) |
+## Hardware Preview
 
-图片来自仓库中的工程与原始资料，文件对应关系见 [assets/README.md](assets/README.md)。
+| STC8 开发板结构参考 | 四位异步计数器时序 |
+| --- | --- |
+| ![STC8开发板结构参考](assets/images/hardware/stc8-board-render.png) | ![四位异步计数器时序](assets/images/digital/four-bit-asynchronous-counter.png) |
+| **CPU 取指与数据通路** | **UART 音频模块接口** |
+| ![CPU取指分析](assets/images/cpu/cpu-fetch-path.png) | ![UART与语音模块接口](assets/images/hardware/uart-audio-interface.png) |
+
+板卡渲染和分析图来自对应课程工程与原始资料，文件对应关系见 [assets/README.md](assets/README.md)。
 
 ## 工程
 
@@ -40,6 +42,6 @@ CPU 工程采用 8 位数据通路和 4 位地址空间。手动版本便于观�
     ├─ 05_嵌入式硬件控制实践/
     └─ 06_综合实践/
     docs/              CPU、PCB 与验证说明
-    assets/images/     工程截图与原理图
+    assets/images/     板卡、数字逻辑、CPU 与接口图
 
 PCB 部分覆盖原理图分析、BOM 和设计流程；仓库中没有原生 PCB 布局、DRC、Gerber 或打样文件。工程验证方法见[调试与验证](docs/调试与验证.md)，课程与第三方资料说明见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
