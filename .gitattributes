@@ -7,6 +7,7 @@
 *.v text eol=lf
 *.vhdl text eol=lf
 *.svg text eol=lf
+assets/images/stc8-control-board-schematic.svg binary
 *.png binary
 *.jpg binary
 *.xlsx binary

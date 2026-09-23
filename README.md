@@ -20,11 +20,13 @@ flowchart LR
 
 ## 项目展示
 
-| CPU 取指与数据通路 | NE555 充放电状态 | UART 音频模块接口 |
-| --- | --- | --- |
-| ![CPU取指分析](projects/03_计算机组成与CPU/assets/16位机器码-取指令分析.png) | ![NE555充电状态](projects/06_综合实践/01_NE555电子琴/assets/NE555电路分析（三极管截止_电容充电_输出高电平）.png) | ![UART与语音模块接口](projects/06_综合实践/02_旅游解说仪/assets/串口与语音模块接口.png) |
+| CPU 取指与数据通路 | NE555 充电状态 |
+| --- | --- |
+| ![CPU取指分析](assets/images/cpu-fetch-path.png) | ![NE555充电状态](assets/images/ne555-charge-state.png) |
+| **STC8 控制板原理图** | **UART 音频模块接口** |
+| ![STC8控制板原理图](assets/images/stc8-control-board-schematic.svg) | ![UART与语音模块接口](assets/images/uart-audio-interface.png) |
 
-这些图片来自现有课程工程与配套分析资料，用于把电路状态、CPU 数据流和硬件接口与仓库中的工程文件对应起来。
+四张图分别对应计算机组成、模拟电路、原理图分析和硬件接口实践。图像来源及原始位置记录在 [assets/README.md](assets/README.md)。
 
 ## 核心能力
 
@@ -68,6 +70,7 @@ projects/
 ├─ 05_嵌入式硬件控制实践/    STC8 图形化控制程序
 └─ 06_综合实践/              NE555 电子琴与旅游解说仪
 docs/                        技术路线、CPU 链路、PCB 流程与验证方法
+assets/images/               首页使用的真实工程与分析图
 ```
 
 主题目录中的 `course/` 保存课程实践原文件；README 和 `docs/` 是我的分类、分析与工程说明。来源边界集中记录在 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
@@ -80,7 +83,7 @@ docs/                        技术路线、CPU 链路、PCB 流程与验证方�
 - BOM：使用 Excel 或兼容表格工具查看 `.xlsx`。
 - 原理图：SVG 可直接在浏览器查看。
 
-工具安装包没有进入仓库。环境和验证边界见[调试与验证](docs/调试与验证.md)。
+仓库聚焦工程文件与技术分析；所需工具和验证范围见[调试与验证](docs/调试与验证.md)。
 
 ## 与其他仓库的关系
 
