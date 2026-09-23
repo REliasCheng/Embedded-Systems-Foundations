@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<circuit>
+  <version>2</version>
+  <attributes/>
+  <visualElements>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>A</string>
+        </entry>
+      </elementAttributes>
+      <pos x="380" y="240"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>B</string>
+        </entry>
+      </elementAttributes>
+      <pos x="380" y="540"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>C</string>
+        </entry>
+      </elementAttributes>
+      <pos x="900" y="460"/>
+    </visualElement>
+    <visualElement>
+      <elementName>VDD</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="1"/>
+        </entry>
+      </elementAttributes>
+      <pos x="180" y="360"/>
+    </visualElement>
+    <visualElement>
+      <elementName>VDD</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="1"/>
+        </entry>
+      </elementAttributes>
+      <pos x="180" y="660"/>
+    </visualElement>
+    <visualElement>
+      <elementName>RelayDT</elementName>
+      <elementAttributes/>
+      <pos x="440" y="360"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Ground</elementName>
+      <elementAttributes/>
+      <pos x="540" y="240"/>
+    </visualElement>
+    <visualElement>
+      <elementName>RelayDT</elementName>
+      <elementAttributes/>
+      <pos x="440" y="660"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Ground</elementName>
+      <elementAttributes/>
+      <pos x="540" y="540"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Text</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Description</string>
+          <string>或门：当全部输入低电平时，输出才为低电平，其他均为高电平。</string>
+        </entry>
+      </elementAttributes>
+      <pos x="160" y="760"/>
+    </visualElement>
+    <visualElement>
+      <elementName>PullDown</elementName>
+      <elementAttributes/>
+      <pos x="820" y="500"/>
+    </visualElement>
+  </visualElements>
+  <wires>
+    <wire>
+      <p1 x="380" y="240"/>
+      <p2 x="400" y="240"/>
+    </wire>
+    <wire>
+      <p1 x="400" y="320"/>
+      <p2 x="440" y="320"/>
+    </wire>
+    <wire>
+      <p1 x="480" y="320"/>
+      <p2 x="540" y="320"/>
+    </wire>
+    <wire>
+      <p1 x="180" y="660"/>
+      <p2 x="440" y="660"/>
+    </wire>
+    <wire>
+      <p1 x="480" y="660"/>
+      <p2 x="720" y="660"/>
+    </wire>
+    <wire>
+      <p1 x="180" y="360"/>
+      <p2 x="440" y="360"/>
+    </wire>
+    <wire>
+      <p1 x="480" y="360"/>
+      <p2 x="720" y="360"/>
+    </wire>
+    <wire>
+      <p1 x="720" y="460"/>
+      <p2 x="820" y="460"/>
+    </wire>
+    <wire>
+      <p1 x="820" y="460"/>
+      <p2 x="900" y="460"/>
+    </wire>
+    <wire>
+      <p1 x="380" y="540"/>
+      <p2 x="400" y="540"/>
+    </wire>
+    <wire>
+      <p1 x="400" y="620"/>
+      <p2 x="440" y="620"/>
+    </wire>
+    <wire>
+      <p1 x="480" y="620"/>
+      <p2 x="540" y="620"/>
+    </wire>
+    <wire>
+      <p1 x="720" y="360"/>
+      <p2 x="720" y="460"/>
+    </wire>
+    <wire>
+      <p1 x="720" y="460"/>
+      <p2 x="720" y="660"/>
+    </wire>
+    <wire>
+      <p1 x="400" y="240"/>
+      <p2 x="400" y="320"/>
+    </wire>
+    <wire>
+      <p1 x="400" y="540"/>
+      <p2 x="400" y="620"/>
+    </wire>
+    <wire>
+      <p1 x="820" y="460"/>
+      <p2 x="820" y="500"/>
+    </wire>
+    <wire>
+      <p1 x="540" y="240"/>
+      <p2 x="540" y="320"/>
+    </wire>
+    <wire>
+      <p1 x="540" y="540"/>
+      <p2 x="540" y="620"/>
+    </wire>
+  </wires>
+  <measurementOrdering/>
+</circuit>

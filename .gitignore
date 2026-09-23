@@ -1,0 +1,35 @@
+# Local audit and build workspace
+.audit/
+.build/
+build/
+out/
+dist/
+
+# IDE and OS state
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+._*
+~$*
+*.tmp
+*.bak
+*.log
+
+# Programs, installers and archives are not portfolio assets
+*.exe
+*.msi
+*.dll
+*.sys
+*.zip
+*.rar
+*.7z
+
+# Generated binaries and object files
+*.o
+*.obj
+*.elf
+*.bin
+*.map
+*.lst

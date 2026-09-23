@@ -1,0 +1,15 @@
+* text=auto
+*.md text eol=lf
+*.txt text eol=lf
+*.dig text eol=lf
+*.hd text eol=lf
+*.hex text eol=lf
+*.v text eol=lf
+*.vhdl text eol=lf
+*.svg text eol=lf
+*.png binary
+*.jpg binary
+*.xlsx binary
+
+# Preserve course assets byte for byte.
+projects/**/course/** -text
