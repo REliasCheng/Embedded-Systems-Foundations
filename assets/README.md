@@ -11,4 +11,4 @@
 | `images/digital/four-bit-asynchronous-counter.png` | 阶段 1 配套资料 `day01/随堂笔记/四位异步加法计数器.png` | Q0～Q3 计数时序 |
 | `images/cpu/cpu-fetch-path.png` | `projects/03_计算机组成与CPU/assets/16位机器码-取指令分析.png` | 取指阶段数据通路 |
 
-其中板卡图片是课程资料中的结构参考渲染，不是实物照片。
+板卡图片为结构参考渲染，其他图片对应具体电路、接口或数据通路。
