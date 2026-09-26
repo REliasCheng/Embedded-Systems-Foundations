@@ -1,10 +1,20 @@
 # Embedded Systems Foundations
 
-## Overview
+## 👋 项目简介 | Overview
 
 电子电路、数字逻辑、简化 CPU 与基础硬件控制实验。仓库包含 CircuitJS 电路、Digital 工程、STC8 控制程序、原理图和 BOM，内容从基础器件一直延伸到 CPU 的取指、解码与执行。
 
-## Architecture
+## 🖼 硬件预览 | Hardware Preview
+
+| STC8 开发板结构参考 | 四位异步计数器时序 |
+| --- | --- |
+| ![STC8开发板结构参考](assets/images/hardware/stc8-board-render.png) | ![四位异步计数器时序](assets/images/digital/four-bit-asynchronous-counter.png) |
+| **CPU 取指与数据通路** | **UART 音频模块接口** |
+| ![CPU取指分析](assets/images/cpu/cpu-fetch-path.png) | ![UART与语音模块接口](assets/images/hardware/uart-audio-interface.png) |
+
+图片与工程文件的对应关系见 [assets/README.md](assets/README.md)。
+
+## 🧠 系统架构 | Architecture
 
 ```text
 电子器件与电路
@@ -20,17 +30,7 @@ PC / MAR / MBR / IR / Control Unit
 
 CPU 工程采用 8 位数据通路和 4 位地址空间。手动版本用于逐步切换 WE/OE 与总线状态，自动版本通过时钟、计数器和查找表执行 `LOAD_A → LOAD_B → ADD → STORE`。
 
-## Hardware Preview
-
-| STC8 开发板结构参考 | 四位异步计数器时序 |
-| --- | --- |
-| ![STC8开发板结构参考](assets/images/hardware/stc8-board-render.png) | ![四位异步计数器时序](assets/images/digital/four-bit-asynchronous-counter.png) |
-| **CPU 取指与数据通路** | **UART 音频模块接口** |
-| ![CPU取指分析](assets/images/cpu/cpu-fetch-path.png) | ![UART与语音模块接口](assets/images/hardware/uart-audio-interface.png) |
-
-图片与工程文件的对应关系见 [assets/README.md](assets/README.md)。
-
-## Technical Highlights
+## 🚀 核心项目 | Featured Projects
 
 | 主题 | 内容 |
 | --- | --- |
@@ -42,7 +42,7 @@ CPU 工程采用 8 位数据通路和 4 位地址空间。手动版本用于逐�
 | [NE555 电子琴](projects/06_综合实践/01_NE555电子琴/README.md) | 用可切换电阻支路改变 NE555 振荡频率 |
 | [旅游解说仪](projects/06_综合实践/02_旅游解说仪/README.md) | STC8 通过 UART 控制 CH7800 音频模块 |
 
-## Build / Run
+## 🛠 打开方式 | Build / Run
 
 - .txt：导入 CircuitJS 查看电路。
 - .dig：使用 Digital v0.30 打开；主工程与自定义子电路需保持原目录关系。
@@ -50,7 +50,7 @@ CPU 工程采用 8 位数据通路和 4 位地址空间。手动版本用于逐�
 - .xlsx：BOM 与器件清单。
 - .svg：原理图和接口图，可直接在浏览器查看。
 
-## Project Structure
+## 📂 工程结构 | Repository Structure
 
     projects/
     ├─ 01_电子电路基础/
@@ -64,7 +64,7 @@ CPU 工程采用 8 位数据通路和 4 位地址空间。手动版本用于逐�
 
 PCB 部分聚焦原理图分析、BOM 和设计流程，当前工程范围到设计输入与网络检查。
 
-## Documentation
+## 📖 技术文档 | Documentation
 
 - [嵌入式基础技术路线](docs/嵌入式基础技术路线.md)
 - [数字逻辑到 CPU](docs/数字逻辑到CPU.md)
@@ -72,7 +72,7 @@ PCB 部分聚焦原理图分析、BOM 和设计流程，当前工程范围到设
 - [调试与验证](docs/调试与验证.md)
 - [来源与许可](THIRD_PARTY_NOTICES.md)
 
-## Related Projects
+## 🔗 相关项目 | Related Projects
 
 - [Embedded-C-Cpp-Learning](https://github.com/REliasCheng/Embedded-C-Cpp-Learning)：C/C++、模块接口与状态机。
 - [STC8-MCU-Learning](https://github.com/REliasCheng/STC8-MCU-Learning)：STC8 外设与任务协作工程。
