@@ -8,7 +8,7 @@
 
 - 不包含可构建 firmware/application source；当前定位是 documentation / architecture snapshot。
 - 课程源码、课程图片、PDF、未知字体、未知生成资产和不必要的第三方/vendor 大包均不在本快照中。
-- $(System.Collections.Hashtable.Limitation)
+- 课程/support 文件和原课程图片均未进入该快照；当前内容不代表可构建课程工程。
 
 ## Contents
 
@@ -19,7 +19,7 @@
 ## Validation boundary
 
 - 未提供板端运行证据时，不声称 hardware verified。
-- 未执行真实构建时，不声称 build verified。
+- Candidate 不含可构建 firmware/application source，因此未执行固件构建或板端运行验证。
 - 文档中的协议、地址、寄存器和架构关系属于技术事实说明，不表示未知来源的具体实现已被保留。
 
 ## License scope
