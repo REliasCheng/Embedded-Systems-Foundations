@@ -1,27 +1,60 @@
 # Embedded-Systems-Foundations
 
-> Clean Public Snapshot Candidate · R1 internal candidate · no remote configured
+从电子电路、数字逻辑和简化 CPU 出发，连接到 PCB 设计与 MCU 控制的嵌入式系统基础文档库。仓库强调信号如何从电压与逻辑门逐层进入寄存器、总线、控制序列和真实硬件接口。
 
-面向数字逻辑、简化 CPU 与嵌入式硬件控制关系的文档型公开技术快照。
+## 技术范围
 
-## Public snapshot scope
+- **电子电路**：电源、回路、二极管、晶体管、MOS 与波形观察
+- **数字逻辑**：真值表、加法器、三态总线、锁存器与寄存器
+- **计算机组成**：ALU、MAR/MBR/IR、内存、程序计数器与控制序列
+- **硬件设计**：需求、BOM、原理图、布局布线、ERC/DRC 与制造检查
+- **MCU 控制**：GPIO、PWM、UART、引脚和负载接口的验证思路
 
-- 不包含可构建 firmware/application source；当前定位是 documentation / architecture snapshot。
-- 课程源码、课程图片、PDF、未知字体、未知生成资产和不必要的第三方/vendor 大包均不在本快照中。
-- 课程/support 文件和原课程图片均未进入该快照；当前内容不代表可构建课程工程。
+## 平台与芯片边界
 
-## Contents
+文档使用通用数字逻辑和简化 8 位 CPU 模型解释数据通路，并以 8051/STC8 类 MCU 的 GPIO、PWM、UART 控制作为硬件接口示例。仓库不绑定某一块开发板，也不提供特定芯片的可构建固件。
 
-- [技术文档](docs/)
-- 当前没有保留图片或图示。
+## 知识架构
 
+```mermaid
+flowchart LR
+    A[电压 / 电流 / 回路] --> B[高低电平]
+    B --> C[逻辑门]
+    C --> D[加法器 / ALU]
+    C --> E[锁存器 / 寄存器]
+    D --> F[数据通路]
+    E --> F
+    F --> G[取指 / 译码 / 执行]
+    A --> H[原理图 / PCB]
+    G --> I[MCU 与外设控制]
+    H --> I
+```
 
-## Validation boundary
+## 核心内容
 
-- 未提供板端运行证据时，不声称 hardware verified。
-- Candidate 不含可构建 firmware/application source，因此未执行固件构建或板端运行验证。
-- 文档中的协议、地址、寄存器和架构关系属于技术事实说明，不表示未知来源的具体实现已被保留。
+| 文档 | 关注点 |
+| --- | --- |
+| [嵌入式基础技术路线](docs/嵌入式基础技术路线.md) | 从电路到 CPU 与 MCU 的整体关系 |
+| [数字逻辑到 CPU](docs/数字逻辑到CPU.md) | 加法器、寄存器、总线、内存与简化指令流程 |
+| [PCB 设计流程](docs/PCB设计流程.md) | 需求、选型、原理图、布局布线与生产检查 |
+| [调试与验证](docs/调试与验证.md) | 仿真、逻辑验证、控制程序与硬件证据边界 |
 
-## License scope
+## 工程结构
 
-根目录 LICENSE 仅适用于该 candidate 中由仓库维护者独立编写的文档、图示和代码。未捆绑的 upstream 组件、课程材料和第三方实现不因文档引用而受到根 MIT License 覆盖。
+```text
+docs/
+  嵌入式基础技术路线.md
+  数字逻辑到CPU.md
+  PCB设计流程.md
+  调试与验证.md
+```
+
+本仓库定位为架构与工程方法文档，不提供可构建的固件、EDA 工程或板级驱动；它适合作为后续 MCU、RTOS 和硬件设计项目的概念索引。
+
+## 验证范围
+
+当前验证限于文档结构、技术关系与内部导航检查。仓库没有可执行源代码，因此不存在固件构建、仿真工程运行或硬件实测结果；相关内容仅描述可采用的验证方法。
+
+## License Boundary
+
+根目录 [MIT License](LICENSE) 适用于仓库维护者编写的文档。外部软件、芯片/器件资料、课程材料、原理图和未随仓库分发的工程文件不因被引用而纳入该许可。
