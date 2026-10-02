@@ -2,11 +2,9 @@
 
 从电子电路、数字逻辑和简化 CPU 出发，连接到 PCB 设计与 MCU 控制的嵌入式系统基础文档库。
 
-## Overview
+![Embedded systems knowledge map](assets/images/architecture/portfolio-overview.svg)
 
-仓库强调信号如何从电压与逻辑门逐层进入寄存器、总线、控制序列和真实硬件接口，为后续 MCU、RTOS 和硬件设计项目提供概念索引。
-
-## Platform & Technology
+## Project Snapshot
 
 | Field | Value |
 | --- | --- |
@@ -15,6 +13,12 @@
 | Toolchain | Documentation-oriented；不包含固件或 EDA 构建工具链 |
 | Architecture | Electronics → Digital Logic → CPU Architecture → MCU / PCB Integration |
 | Verification | Documentation structure、technical relationships 与 internal navigation review |
+
+> **Project status:** Knowledge architecture documented · Executable build and runtime not applicable · Hardware validation not performed
+
+## Overview
+
+仓库强调信号如何从电压与逻辑门逐层进入寄存器、总线、控制序列和真实硬件接口，为后续 MCU、RTOS 和硬件设计项目提供概念索引。
 
 文档使用通用数字逻辑和简化 8 位 CPU 模型解释数据通路，并以 8051/STC8 类 MCU 的 GPIO、PWM、UART 控制作为硬件接口示例。仓库不绑定某一块开发板，也不提供特定芯片的可构建固件。
 
