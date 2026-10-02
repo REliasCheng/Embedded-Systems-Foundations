@@ -18,13 +18,13 @@
 
 > 📚 **Scope:** Documentation project · No firmware build · No runtime claim
 
-## Overview
+## 📌 Overview
 
 仓库强调信号如何从电压与逻辑门逐层进入寄存器、总线、控制序列和真实硬件接口，为后续 MCU、RTOS 和硬件设计项目提供概念索引。
 
 文档使用通用数字逻辑和简化 8 位 CPU 模型解释数据通路，并以 8051/STC8 类 MCU 的 GPIO、PWM、UART 控制作为硬件接口示例。仓库不绑定某一块开发板，也不提供特定芯片的可构建固件。
 
-## Architecture
+## 🏗️ Architecture
 
 这里展示的是知识架构，不是软件模块或驱动层架构。
 
@@ -44,7 +44,7 @@ flowchart LR
     H --> I
 ```
 
-## Key Features
+## ✨ Key Features
 
 | Knowledge Area | Coverage |
 | --- | --- |
@@ -55,7 +55,7 @@ flowchart LR
 | MCU Concepts | GPIO、PWM、UART、引脚和负载接口的验证思路 |
 | Embedded Learning Path | 从电路基础延伸到 MCU、RTOS 与硬件设计项目的知识导航 |
 
-## Project Structure
+## 📂 Project Structure
 
 ```text
 docs/
@@ -67,7 +67,7 @@ docs/
 
 本仓库定位为架构与工程方法文档，不提供可构建的固件、EDA 工程或板级驱动。
 
-## Documentation
+## 📚 Documentation
 
 | 文档 | 关注点 |
 | --- | --- |
@@ -76,21 +76,21 @@ docs/
 | [PCB 设计流程](docs/PCB设计流程.md) | 需求、选型、原理图、布局布线与生产检查 |
 | [调试与验证](docs/调试与验证.md) | 仿真、逻辑验证、控制程序与硬件证据边界 |
 
-## Verification
+## 🧪 Verification
 
-### Host Test
+### 💻 Host Test
 
 **Status:** Not Applicable. 仓库不包含可执行源代码或主机测试。
 
-### Build Verification
+### 🔨 Build Verification
 
 **Status:** Not Applicable. 仓库不包含固件、EDA 或软件工程构建。
 
-### Hardware Validation
+### 🔌 Hardware Validation
 
 **Status:** Not Performed. 仓库没有板级运行、硬件测试或仿真工程结果。
 
-### Runtime Evidence
+### 📊 Runtime Evidence
 
 **Status:** Not Applicable. 仓库用于知识整理和技术导航，不包含程序运行证据。
 
