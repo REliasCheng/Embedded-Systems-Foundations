@@ -72,19 +72,19 @@ docs/
 
 ### Host Test
 
-Not Applicable。仓库不包含可执行源代码或主机测试。
+**Status:** Not Applicable. 仓库不包含可执行源代码或主机测试。
 
 ### Build Verification
 
-Not Applicable。仓库不包含固件、EDA 或软件工程构建。
+**Status:** Not Applicable. 仓库不包含固件、EDA 或软件工程构建。
 
 ### Hardware Validation
 
-Not Performed。仓库没有板级运行、硬件测试或仿真工程结果。
+**Status:** Not Performed. 仓库没有板级运行、硬件测试或仿真工程结果。
 
 ### Runtime Evidence
 
-Not Applicable。仓库用于知识整理和技术导航，不包含程序运行证据。
+**Status:** Not Applicable. 仓库用于知识整理和技术导航，不包含程序运行证据。
 
 当前验证限于文档结构、技术关系与内部导航检查；这些检查不等同于可执行测试、构建或硬件验证。
 
