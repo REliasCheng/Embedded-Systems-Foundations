@@ -2,19 +2,21 @@
 
 从电子电路、数字逻辑和简化 CPU 出发，连接到 PCB 设计与 MCU 控制的嵌入式系统基础文档库。
 
+**📐 Knowledge Architecture**
+
 ![Embedded systems knowledge map](assets/images/architecture/portfolio-overview.svg)
 
-## Project Snapshot
+## Knowledge Snapshot
 
-| Field | Value |
+| Documentation Focus | Current Scope |
 | --- | --- |
-| Language | Markdown / Technical Documentation |
-| Platform | Embedded Systems Concepts；通用数字逻辑、简化 8 位 CPU 与 8051/STC8 接口示例 |
-| Toolchain | Documentation-oriented；不包含固件或 EDA 构建工具链 |
-| Architecture | Electronics → Digital Logic → CPU Architecture → MCU / PCB Integration |
-| Verification | Documentation structure、technical relationships 与 internal navigation review |
+| Deliverable | Markdown technical documentation |
+| Knowledge Scope | Electronics、Digital Logic、CPU Architecture、MCU 与 PCB concepts |
+| Learning Path | Signal → Logic → Data Path → MCU / Hardware Integration |
+| Build Scope | 不包含固件、EDA 工程或可执行工具链 |
+| Review Scope | 文档结构、技术关系与内部导航检查 |
 
-> **Project status:** Knowledge architecture documented · Executable build and runtime not applicable · Hardware validation not performed
+> 📚 **Scope:** Documentation project · No firmware build · No runtime claim
 
 ## Overview
 
@@ -25,6 +27,8 @@
 ## Architecture
 
 这里展示的是知识架构，不是软件模块或驱动层架构。
+
+### 🔢 From Logic to CPU
 
 ```mermaid
 flowchart LR
